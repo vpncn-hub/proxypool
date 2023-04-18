@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  proxypool:
+    image: proxypool
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 12580:12580
+    volumes:
+      - ./config.yaml:/proxypool-src/config.yaml
+      - ./source.yaml:/proxypool-src/source.yaml

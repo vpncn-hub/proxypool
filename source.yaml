@@ -1,0 +1,3 @@
+- type: clash
+  options:
+    url: https://raw.githubusercontent.com/du5/free/master/file/0207/clash.yaml
